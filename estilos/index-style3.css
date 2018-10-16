@@ -1,0 +1,123 @@
+
+.main{
+       display: block;
+list-style-type: none;
+width: 550px;
+margin: 0 auto;
+padding: 0;
+}
+.barra {
+background-image:url('../images/icon-ponto.png'); 
+  background-color:white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+background-repeat: no-repeat;
+background-position:left;
+background-size:200px;
+box-shadow: black;
+   box-shadow: 0px 2px 0 #332;
+   -webkit-box-shadow: 5px 5px 0 #333;
+   
+box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+ul.menu{
+    
+display: block;
+list-style-type: none;
+width: 700px;
+margin: 3 auto;
+padding: 0;
+margin-left:300px; 
+margin-top: -40px;  
+position: fixed;
+
+}
+
+ul.menu li{
+	
+   margin: 6px;
+   padding: 0px;
+}
+ul.menu  a  {
+display: fixed;
+float: left;
+max-height: 80px;
+width: 100px;
+margin: 0px;
+padding: 4px 0px;
+ font-family: tahoma, sans-serif;
+display: inline;
+color:black;
+text-decoration:none;
+text-align: center;
+}
+a:hover {
+  border:solid 1px;
+margin-right: 3px;
+}
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:8px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:260px;
+   border-radius:19px;
+position:relative;
+
+}
+
+#divBusca:hover{
+ background-color: #affacb;
+}
+#divBusca #link_pesquisa:hover{
+border-color: transparent;
+}
+
+#divBusca{
+margin-top:18px;
+  background-color:#DCDCDC; 
+  border:solid 0px;
+  border-radius:5px;
+  width:300px;  
+}
+.itens{
+margin-top:28px;
+  background-color:#DCDCDC; 
+  border:solid 0px;
+  border-radius:5px;
+  width:300px;
+margin-left:370px;
+margin-right:px;
+}
+.btn-login{
+  background-color: #affacb;
+    text-align: center;
+animation-iteration-count: 2px;
+}
+
+.pesquisar-index:hover{
+ border:solid 0px;
+}
+
+.itens{
+position:fixed;
+background:black;
+
+}
+.lista{
+
+  list-style-type: none;
+  padding:17px;
+  
+}
+.img{
+  width: 10em;
+  height:  6em;
+}
