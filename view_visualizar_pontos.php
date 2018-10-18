@@ -165,19 +165,17 @@ $consulta = $conn -> query("SELECT * FROM pontos_turisticos WHERE id='$id'");
             </div>
         </div>
     </div>
+       <!-- Listando dados do ponto -->
     </div>
-<div class="courselboot" >
-  <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="10000" id="myCarousel">
-  <div class="carousel-inner">
-    <div class="item active" class="carousel">
-      <div class="">
-      	<br><br><br><br><br><br><br><br>
+    
+    <div  class="cont">  
           <img src="upload/<?=$linha['imagem'];?>" class="img-responsive center">
           <div> 
             <h4><?=$linha['nome_ponto'];?></h4>
             <h5><?=$linha['logradouro'];?></h5>
             <h5><?=$linha['bairro'];?></h5>
           </div>
+    </div>
         </a>
       </div>
     </div>

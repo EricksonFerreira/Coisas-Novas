@@ -167,33 +167,48 @@ session_start();
 		</div>
   	</div>
 
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  		<!-- Indicators -->
+  		<ol class="carousel-indicators">
+    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    		<li data-target="#myCarousel" data-slide-to="1"></li>
+    		<li data-target="#myCarousel" data-slide-to="2"></li>
+    		<li data-target="#myCarousel" data-slide-to="3"></li>
+  		</ol>
 
+  		<!-- Wrapper for slides -->
+  		<div class="carousel-inner" role="listbox">
+			<?php
+			 $controle = 2;
+      		 while($linha = $consulta -> fetch(PDO::FETCH_ASSOC)){
+      		 if ($controle == 2) {
+      		 	?>
+	      			<div class="item active">
+      		 			<a href="view_visualizar_pontos.php?id=<?=$linha['id']?>">
+	        			<img style="width: 100%;height: 31em;" src="upload/<?=$linha['imagem'];?>">
+      		 			</a>
+	      			</div>
+    		<?php $controle = 1;?>
+    		<?php }elseif ($controle = 1) { ?>
+    			<div class="item">
+					<a href="view_visualizar_pontos.php?id=<?=$linha['id']?>">
+        			<img style="width: 100%;height: 31em;" src="upload/<?=$linha['imagem'];?>">
+      				</a>
+      			</div>
+      		<?php }else{?>
+      			<div class="item">
+					<a href="view_visualizar_pontos.php?id=<?=$linha['id']?>">
+        			<img style="width: 100%;height: 31em;" src="upload/<?=$linha['imagem'];}}?>">
+        			</a>
+      			</div>
+		  		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+	</div>
 
-<div id="corpo">
-	<h1> Pontos Cadastrados </h1>
-		<table class="ui celled table" id="tabela">
-			<tr>
-				<th> Nome do Ponto </th>
-				<th> Logradouro </th>
-				<th> Bairro </th>
-				<th> imagem </th>
-			</tr>
-			
-			<?php 
-
-				while($linha = $consulta -> fetch(PDO::FETCH_ASSOC)){
-					echo "<tr>";?>
-				<?php	echo "<td>{$linha['nome_ponto']}</td>";
-						echo "<td>{$linha['logradouro']}</td>";
-						echo "<td>{$linha['bairro']}</td>";?>
-						<td><img src= "upload/<?=$linha['imagem'];?>" class="img"></td>
-						<td><a href="view_visualizar_pontos.php?id=<?=$linha['id'];?>">Visualizar ponto: <?=$linha['nome_ponto']?></a></td>
-				<?php	echo "</tr>";
-				}
-			 ?>
-		</table>	
-		</div>	
-		<!-- Footer -->
 		<div id="foot"></div>
 		<footer class="page-footer font-small blue">
 

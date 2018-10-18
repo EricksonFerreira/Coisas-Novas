@@ -24,12 +24,10 @@ ul{
 #corpo{
   margin-top: 5em;
 }
-.listas_result{
-list-style-type:none;
-background-color:rgba(90, 123, 123, 0.6);
-margin-left: 4%;
-margin-right: auto;
-color:white;
-position:left;
+#myCarousel{
+width: 650px;
+height:450px;
+margin-left:320px;
+margin-top: 80px;
 
 }
